@@ -2,11 +2,21 @@ import React, { Component } from 'react';
 // import 'bulma/css/bulma.css';
 // import 'bootstrap';
 
+import Submissions from './Submissions';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import HomePage from './HomePage';
+
 class Navbar extends React.Component {
     render () {
         return (
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <a className="navbar-brand" href="#">The Food Fighters</a>
+          <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <Link to="/" className="navbar-brand">The Food Fighters</Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
@@ -15,6 +25,9 @@ class Navbar extends React.Component {
               <ul className="navbar-nav mr-auto">
                 <li className="nav-item active">
                   <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                </li>
+                <li className="nav-item">
+                  <Link to="/submissions" className="nav-link">Submissions</Link>
                 </li>
               </ul>
               {/* <form className="form-inline my-2 my-lg-0">
