@@ -1,7 +1,6 @@
 import React from 'react';
 
-class TermsModal extends React.Component {
-    render() {
+export default function TermsModal() {
         return(
             <div className="modal fade" id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
@@ -105,7 +104,4 @@ class TermsModal extends React.Component {
             </div>
         </div>
         );
-    }
 }
-
-export default TermsModal;

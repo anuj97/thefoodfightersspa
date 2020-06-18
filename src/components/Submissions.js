@@ -6,8 +6,7 @@ import {
     Link
   } from "react-router-dom";
 
-class Submissions extends React.Component {
-    render() {
+export default function Submissions() {
         return(
             <>
             <h2><Link to="submissions/1">Hello</Link></h2>
@@ -19,7 +18,4 @@ class Submissions extends React.Component {
                 </Route>
             </>
         )
-    }
 }
-
-export default Submissions;

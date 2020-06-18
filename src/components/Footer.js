@@ -1,7 +1,6 @@
 import React from 'react';
 
-class Footer extends React.Component {
-    render () {
+export default function  Footer() {
         return (
             <footer className="footer">
             <div className="container-fluid">
@@ -15,7 +14,4 @@ class Footer extends React.Component {
             </div>
           </footer>
         );
-    }
 }
-
-export default Footer;

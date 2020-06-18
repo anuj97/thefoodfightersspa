@@ -1,7 +1,6 @@
 import React from 'react';
 
-class UploadModal extends React.Component {
-    render() {
+export default function UploadModal() {
         return(
             <div className="modal fade" id="exampleModalCenterUpload" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterUploadTitle" aria-hidden="true">
             <div className="modal-dialog modal-dialog-centered" role="document">
@@ -29,7 +28,4 @@ class UploadModal extends React.Component {
             </div>
         </div>
         );
-    }
 }
-
-export default UploadModal;

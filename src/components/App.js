@@ -11,29 +11,24 @@ import {
    Link
  } from "react-router-dom";
 
-class App extends React.Component {
-   constructor (props) {
-      super(props)
-   }
-
-   render(){
-      return(
-         <>
-            <Router>
-               <Navbar/>
-               <Switch>
-                  <Route exact path="/" component={HomePage}>
-                  </Route>
-                  <Route path="/submissions">
-                     <Submissions></Submissions>
-                  </Route>
-               </Switch>
-            </Router>
-            <Footer/>
-         </>
-      );
-   }
+export default function  App() {
+   return(
+      <>
+         <Router>
+            <Navbar/>
+            <Switch>
+               <Route exact path="/" component={HomePage}>
+               </Route>
+               <Route path="/submissions">
+                  <Submissions></Submissions>
+               </Route>
+            </Switch>
+         </Router>
+         <Footer/>
+      </>
+   );
 }
 
 
-export default App;
+
+

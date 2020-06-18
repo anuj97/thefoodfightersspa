@@ -4,8 +4,7 @@ import UploadModal from './UploadModal';
 import TermsModal from './TermsModal';
 import { Switch } from 'react-router-dom';
 
-class HomePage extends React.Component {
-    render() {
+export default function HomePage() {
         return (
             <>
                 <Carousel/>
@@ -22,7 +21,4 @@ class HomePage extends React.Component {
                 <TermsModal/>
             </>
         )
-    }
 }
-
-export default HomePage;

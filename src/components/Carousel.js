@@ -1,7 +1,6 @@
 import React from 'react';
 
-class Carousel extends React.Component {
-    render () {
+export default function Carousel() {
         return (
             <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
             <ol className="carousel-indicators">
@@ -42,7 +41,4 @@ class Carousel extends React.Component {
             </a>
           </div>
         );
-    }
 }
-
-export default Carousel;
