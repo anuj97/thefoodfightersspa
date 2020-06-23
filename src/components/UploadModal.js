@@ -1,4 +1,5 @@
 import React from 'react';
+import UploadForm from './UploadForm';
 
 class UploadModal extends React.Component {
     render() {
@@ -13,17 +14,11 @@ class UploadModal extends React.Component {
                 </button>
                 </div>
                 <div className="modal-body">
-                {/* <form id="form1" action="runner.html" method="post">
-                    <input type='file' id="imgInp" />
-                    <br>
-                    <div className="mx-auto" style="width: 150px;">            
-                    <img id="blah" src="#" alt="your image" style="height: 200; width: auto;" />
-                    </div>
-                </form> */}
+                    <UploadForm></UploadForm>
                 </div>
                 <div className="modal-footer">
-                <button type="button" className="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                <button type="button" className="btn btn-primary">Upload</button>
+                    <button type="button" className="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" className="btn btn-primary">Upload</button>
                 </div>
             </div>
             </div>

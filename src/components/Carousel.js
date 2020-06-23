@@ -1,6 +1,12 @@
 import React from 'react';
+import { contains } from 'jquery';
 
 class Carousel extends React.Component {
+
+  constructor(props) {
+    super(props)
+  }
+
     render () {
         return (
             <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
@@ -17,20 +23,17 @@ class Carousel extends React.Component {
                   <p>Show what you got</p>
                 </div>
               </div>
-              <div className="carousel-item">
-                <img src="./src/images/burrito-chicken-delicious-dinner-461198.jpg" className="d-block w-100" alt="..."></img>
-                <div className="carousel-caption d-none d-md-block">
-                  <h5>The Food Fighters</h5>
-                  <p>Show what you got</p>
+
+              {this.props.urls.map((url) => (
+                <div className="carousel-item">
+                  <img src={url} className="d-block w-100" alt="..."></img>
+                  <div className="carousel-caption d-none d-md-block">
+                    <h5>The Food Fighters</h5>
+                    <p>Show what you got</p>
+                  </div>
                 </div>
-              </div>
-              <div className="carousel-item">
-                <img src="./src/images/white-and-brown-cooked-dish-on-white-ceramic-bowls-958545.jpg" className="d-block w-100" alt="..."></img>
-                <div className="carousel-caption d-none d-md-block">
-                  <h5>The Food Fighters</h5>
-                  <p>Show what you got</p>
-                </div>
-              </div>
+              ))}
+              
             </div>
             <a className="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
               <span className="carousel-control-prev-icon" aria-hidden="true"></span>
