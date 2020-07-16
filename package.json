@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
+    "start": "node app.js",
     "build": "webpack --mode production"
   },
   "repository": {
@@ -20,6 +20,7 @@
   "dependencies": {
     "bootstrap": "^4.4.1",
     "bulma": "^0.8.2",
+    "express": "^4.17.1",
     "jquery": "^3.5.0",
     "popper.js": "^1.16.1",
     "react": "^16.13.1",
